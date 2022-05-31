@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 
 def inicio(request):
-    return render(request, 'index.html', {'var': "Mi primera aplicacion de prueba"})
+    return render(request, 'index.html', {'var': "Mi primera aplicacion de prueba con Django framework"})

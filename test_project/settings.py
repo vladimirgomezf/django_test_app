@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'first_app',
+    'second_app',
 ]
 
 MIDDLEWARE = [
@@ -58,6 +59,7 @@ TEMPLATES = [
         'DIRS': [
             BASE_DIR / 'test_project/template',
             BASE_DIR / 'first_app/template',
+            BASE_DIR / 'second_app/template',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
