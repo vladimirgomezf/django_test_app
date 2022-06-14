@@ -7,9 +7,12 @@
     <title>{% block title %} Index {% endblock %}</title>
   </head>
   <body>
-  {% block content %}
+    {% block content %}
     <h1>Index Page</h1>
+    {% if var %}
     <h1>{{var}}</h1>
-  {% endblock %}
+    {% endif %} {% if form %}
+    <div>{{form}}</div>
+    {% endif %} {% endblock %}
   </body>
 </html>
