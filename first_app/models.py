@@ -10,3 +10,6 @@ class Address(models.Model):
 
     def __str__(self) -> str:
         return f"{self.street}, {self.city}."
+
+    class Meta:
+        ordering = ['street']

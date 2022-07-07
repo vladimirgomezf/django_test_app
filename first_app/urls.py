@@ -1,7 +1,9 @@
 from django.urls import path
-from .views import formulario
+from . import  views
 
 urlpatterns = [
-    path('form/', formulario),
-    # path('first/add', ),
+    path('form/', views.formulario),
+
+    path('address/', views.address_list),
+    path('address/<int:pk>/', views.address_detail),
 ]
